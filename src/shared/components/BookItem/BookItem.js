@@ -1,7 +1,7 @@
 import { ROOT_PAGE_URL } from '@constants/navigator';
 import { Link } from 'react-router-dom';
 import useBookItem from './useBookItem';
-//${process.env.REACT_APP_SERVER_URL}
+const baseUrl = process.env.REACT_APP_SERVER_URL
 const BookItem = ({ book, size = 'lg' }) => {
   const { handleAddToCard } = useBookItem(book);
 
